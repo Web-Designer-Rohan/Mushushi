@@ -1,7 +1,7 @@
 name: Mashashi-Forge
 on: 
   push:
-  workflow_dispatch: # This adds the manual "Run workflow" button
+  workflow_dispatch:
 
 jobs:
   build:
@@ -10,15 +10,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Clean Environment
+        # This force-removes the hidden system folders that caused the permission error
+        run: rm -rf .bun .cache .config .local .npm
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
+          # We remove the cache option temporarily to avoid the permission bug
+          # cache: gradle 
 
       - name: Grant Execute Permission
-        run: chmod +x mashashi/gradlew # Points to the subfolder
+        run: chmod +x mashashi/gradlew
 
       - name: Build Debug APK
         run: |
@@ -30,3 +35,4 @@ jobs:
         with:
           name: Mashashi-E-Rank-Release
           path: mashashi/app/build/outputs/apk/debug/app-debug.apk
+          

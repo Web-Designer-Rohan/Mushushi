@@ -9,7 +9,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
+        
+      - name: Debug Directory Structure
+        run: ls -R
+        
       - name: Clean Environment
         # This force-removes the hidden system folders that caused the permission error
         run: rm -rf .bun .cache .config .local .npm

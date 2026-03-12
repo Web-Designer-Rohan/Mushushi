@@ -25,13 +25,26 @@ jobs:
           # We remove the cache option temporarily to avoid the permission bug
           # cache: gradle 
 
-      - name: Grant Execute Permission
-        run: chmod +x mashashi/gradlew
+            - name: Grant Execute Permission
+        # This will search for gradlew and make it executable no matter where it is
+        run: find . -name "gradlew" -exec chmod +x {} +
 
       - name: Build Debug APK
         run: |
-          cd mashashi
+          # Automatically find the directory containing gradlew and build there
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          GRADLEW_DIR=$(dirname "$GRADLEW_PATH")
+          echo "Building in $GRADLEW_DIR"
+          cd "$GRADLEW_DIR"
           ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mashashi-E-Rank-Release
+          # Updated to a wildcard to find the APK wherever it ends up
+          path: "**/build/outputs/apk/debug/*.apk"
+          
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

@@ -1,0 +1,15 @@
+# Ignore local Termux/Kilo system files
+.bun/
+.cache/
+.config/
+.local/
+.npm/
+.bashrc
+.profile
+.gitconfig
+
+# Ignore Android build artifacts
+**/build/
+*.apk
+.gradle/
+local.properties

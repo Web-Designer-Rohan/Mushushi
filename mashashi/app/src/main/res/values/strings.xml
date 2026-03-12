@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mashashi</string>
+    <string name="main_activity_title">The Void</string>
+    <string name="evolve_or_remain_same">EVOLVE OR REMAIN THE SAME</string>
+    <string name="rank_up_title">RANK UP!</string>
+    <string name="workout_start_prompt">Begin your quest</string>
+    <string name="camera_permission_denied">Camera access is required for workout verification.</string>
+    <string name="accessibility_permission_denied">Accessibility permission is required for system monitoring.</string>
+    <string name="notification_channel_name">Mashashi Notifications</string>
+    <string name="notification_channel_description">Progress updates and reminders</string>
+    <string name="warden_service_label">Mashashi Warden</string>
+</resources>

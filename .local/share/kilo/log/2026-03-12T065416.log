@@ -1,0 +1,839 @@
+INFO  2026-03-12T06:54:16 +794ms service=server method=GET path=/event request
+INFO  2026-03-12T06:54:16 +4ms service=server status=started method=GET path=/event request
+INFO  2026-03-12T06:54:16 +7ms service=default directory=/root creating instance
+INFO  2026-03-12T06:54:16 +3ms service=project directory=/root fromDirectory
+INFO  2026-03-12T06:54:16 +15ms service=db path=/root/.local/share/kilo/kilo.db opening database
+INFO  2026-03-12T06:54:18 +2026ms service=db count=3 mode=bundled applying migrations
+INFO  2026-03-12T06:54:19 +68ms service=default directory=/root bootstrapping
+INFO  2026-03-12T06:54:19 +64ms service=server method=GET path=/session request
+INFO  2026-03-12T06:54:19 +0ms service=server status=started method=GET path=/session request
+INFO  2026-03-12T06:54:19 +1ms service=server method=GET path=/config/providers request
+INFO  2026-03-12T06:54:19 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-03-12T06:54:19 +3ms service=server method=GET path=/provider request
+INFO  2026-03-12T06:54:19 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-03-12T06:54:19 +2ms service=server method=GET path=/agent request
+INFO  2026-03-12T06:54:19 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-03-12T06:54:19 +1ms service=server method=GET path=/config request
+INFO  2026-03-12T06:54:19 +0ms service=server status=started method=GET path=/config request
+INFO  2026-03-12T06:54:19 +283ms service=config path=/root/.config/kilo/config.json loading
+INFO  2026-03-12T06:54:19 +2ms service=config path=/root/.config/kilo/kilo.json loading
+INFO  2026-03-12T06:54:19 +15ms service=config path=/root/.config/kilo/kilo.jsonc loading
+INFO  2026-03-12T06:54:19 +2ms service=config path=/root/.config/kilo/opencode.json loading
+INFO  2026-03-12T06:54:19 +46ms service=config path=/root/.config/kilo/opencode.jsonc loading
+INFO  2026-03-12T06:54:19 +67ms service=config path=kilo.jsonc loading
+INFO  2026-03-12T06:54:19 +1ms service=config path=kilo.json loading
+INFO  2026-03-12T06:54:19 +131ms service=config path=opencode.jsonc loading
+INFO  2026-03-12T06:54:19 +18ms service=config path=opencode.json loading
+INFO  2026-03-12T06:54:20 +460ms service=plugin name=KiloAuthPlugin loading internal plugin
+INFO  2026-03-12T06:54:20 +2ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-03-12T06:54:20 +3ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-03-12T06:54:20 +3ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-03-12T06:54:20 +1ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-03-12T06:54:20 +573ms service=bus type=* subscribing
+INFO  2026-03-12T06:54:20 +2ms service=bus type=session.created subscribing
+INFO  2026-03-12T06:54:20 +2ms service=bus type=session.updated subscribing
+INFO  2026-03-12T06:54:20 +7ms service=bus type=message.updated subscribing
+INFO  2026-03-12T06:54:20 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-03-12T06:54:20 +1ms service=bus type=session.diff subscribing
+INFO  2026-03-12T06:54:20 +0ms service=bus type=session.turn.open subscribing
+INFO  2026-03-12T06:54:20 +0ms service=bus type=session.turn.close subscribing
+INFO  2026-03-12T06:54:20 +1ms service=format init
+INFO  2026-03-12T06:54:20 +0ms service=bus type=file.edited subscribing
+INFO  2026-03-12T06:54:20 +3ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server, julials enabled LSP servers
+INFO  2026-03-12T06:54:20 +2ms service=file.watcher init
+INFO  2026-03-12T06:54:20 +8ms service=scheduler id=snapshot.cleanup run
+INFO  2026-03-12T06:54:20 +3ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-03-12T06:54:20 +6ms service=bus type=command.executed subscribing
+INFO  2026-03-12T06:54:20 +1ms service=file.watcher platform=linux backend=inotify watcher backend
+INFO  2026-03-12T06:54:20 +35ms service=server event connected
+INFO  2026-03-12T06:54:20 +19ms service=bus type=* subscribing
+INFO  2026-03-12T06:54:26 +5226ms service=server status=started providers
+INFO  2026-03-12T06:54:26 +12ms service=provider status=started state
+INFO  2026-03-12T06:54:26 +42ms service=server status=completed duration=9167 method=GET path=/event request
+INFO  2026-03-12T06:54:26 +4ms service=server status=completed duration=6981 method=GET path=/config request
+INFO  2026-03-12T06:54:26 +7ms service=server status=completed duration=6995 method=GET path=/session request
+INFO  2026-03-12T06:54:26 +81ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-12T06:54:26 +4ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-12T06:54:26 +13ms service=server status=completed duration=7087 method=GET path=/agent request
+INFO  2026-03-12T06:54:28 +2464ms service=model-cache providerID=kilo count=326 models fetched and cached
+INFO  2026-03-12T06:54:28 +53ms service=model-cache providerID=kilo count=326 models fetched and cached
+INFO  2026-03-12T06:54:28 +211ms service=provider init
+INFO  2026-03-12T06:54:29 +229ms service=provider providerID=kilo found
+INFO  2026-03-12T06:54:29 +1ms service=provider status=completed duration=3109 state
+INFO  2026-03-12T06:54:29 +267ms service=server status=completed duration=10313 method=GET path=/provider request
+INFO  2026-03-12T06:54:30 +1056ms service=server status=completed duration=4444 providers
+INFO  2026-03-12T06:54:30 +2ms service=server status=completed duration=11375 method=GET path=/config/providers request
+INFO  2026-03-12T06:54:31 +1483ms service=server method=GET path=/command request
+INFO  2026-03-12T06:54:31 +2ms service=server status=started method=GET path=/command request
+INFO  2026-03-12T06:54:31 +21ms service=review getting uncommitted changes
+INFO  2026-03-12T06:54:41 +9139ms service=server status=completed duration=9160 method=GET path=/command request
+INFO  2026-03-12T06:54:41 +5ms service=server method=GET path=/lsp request
+INFO  2026-03-12T06:54:41 +1ms service=server status=started method=GET path=/lsp request
+INFO  2026-03-12T06:54:41 +7ms service=server status=completed duration=7 method=GET path=/lsp request
+INFO  2026-03-12T06:54:41 +3ms service=server method=GET path=/mcp request
+INFO  2026-03-12T06:54:41 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-03-12T06:54:41 +10ms service=server status=completed duration=7 method=GET path=/mcp request
+INFO  2026-03-12T06:54:41 +1ms service=server method=GET path=/experimental/resource request
+INFO  2026-03-12T06:54:41 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-03-12T06:54:41 +6ms service=server status=completed duration=6 method=GET path=/experimental/resource request
+INFO  2026-03-12T06:54:41 +2ms service=server method=GET path=/formatter request
+INFO  2026-03-12T06:54:41 +1ms service=server status=started method=GET path=/formatter request
+INFO  2026-03-12T06:54:41 +260ms service=server status=completed duration=261 method=GET path=/formatter request
+INFO  2026-03-12T06:54:41 +1ms service=server method=GET path=/session/status request
+INFO  2026-03-12T06:54:41 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-03-12T06:54:41 +4ms service=server status=completed duration=4 method=GET path=/session/status request
+INFO  2026-03-12T06:54:41 +6ms service=server method=GET path=/provider/auth request
+INFO  2026-03-12T06:54:41 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-03-12T06:54:41 +9ms service=server status=completed duration=9 method=GET path=/provider/auth request
+INFO  2026-03-12T06:54:41 +1ms service=server method=GET path=/vcs request
+INFO  2026-03-12T06:54:41 +1ms service=server status=started method=GET path=/vcs request
+INFO  2026-03-12T06:54:41 +3ms service=server status=completed duration=4 method=GET path=/vcs request
+INFO  2026-03-12T06:54:41 +1ms service=server method=GET path=/path request
+INFO  2026-03-12T06:54:41 +1ms service=server status=started method=GET path=/path request
+INFO  2026-03-12T06:54:41 +1ms service=server status=completed duration=1 method=GET path=/path request
+INFO  2026-03-12T06:54:48 +6792ms service=server method=GET path=/kilo/notifications request
+INFO  2026-03-12T06:54:48 +0ms service=server status=started method=GET path=/kilo/notifications request
+WARN  2026-03-12T06:54:52 +3858ms service=review exitCode=129 stderr=warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [<options>] <path> <path> [<pathspec>...]
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --[no-]function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1>,<param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1>,<param2>...]
+                          synonym for --dirstat=files,<param1>,<param2>...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --[no-]compact-summary
+                          generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --[no-]full-index     show full pre- and post-image object names on the "index" lines
+    --[no-]color[=<when>] show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+    --src-prefix <prefix> show the given source prefix instead of "a/"
+    --dst-prefix <prefix> show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --[no-]find-copies-harder
+                          use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --[no-]rename-empty   use empty blobs as rename source
+    --[no-]follow         continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --[no-]ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --[no-]indent-heuristic
+                          heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --[no-]color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --[no-]color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --[no-]relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --[no-]text       treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --[no-]exit-code      exit with 1 if there were differences, 0 otherwise
+    --[no-]quiet          disable all output of the program
+    --[no-]ext-diff       allow an external diff helper to be executed
+    --[no-]textconv       run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --max-depth <depth>   maximum tree depth to recurse
+    --output <file>       output to a specific file
+
+ git diff failed
+INFO  2026-03-12T06:54:52 +1ms service=review no uncommitted changes found
+INFO  2026-03-12T06:54:52 +35ms service=server status=completed duration=3894 method=GET path=/kilo/notifications request
+WARN  2026-03-12T06:55:09 +17672ms service=review no base branch found, defaulting to main
+INFO  2026-03-12T06:55:13 +3454ms service=review baseBranch=main getting branch changes
+WARN  2026-03-12T06:55:16 +3457ms service=review exitCode=129 stderr=warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [<options>] <path> <path> [<pathspec>...]
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --[no-]function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1>,<param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1>,<param2>...]
+                          synonym for --dirstat=files,<param1>,<param2>...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --[no-]compact-summary
+                          generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --[no-]full-index     show full pre- and post-image object names on the "index" lines
+    --[no-]color[=<when>] show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+    --src-prefix <prefix> show the given source prefix instead of "a/"
+    --dst-prefix <prefix> show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --[no-]find-copies-harder
+                          use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --[no-]rename-empty   use empty blobs as rename source
+    --[no-]follow         continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --[no-]ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --[no-]indent-heuristic
+                          heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --[no-]color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --[no-]color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --[no-]relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --[no-]text       treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --[no-]exit-code      exit with 1 if there were differences, 0 otherwise
+    --[no-]quiet          disable all output of the program
+    --[no-]ext-diff       allow an external diff helper to be executed
+    --[no-]textconv       run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --max-depth <depth>   maximum tree depth to recurse
+    --output <file>       output to a specific file
+
+ baseBranch=main git diff failed
+INFO  2026-03-12T06:55:16 +3ms service=review baseBranch=main no branch changes found
+INFO  2026-03-12T07:00:21 +304830ms service=server method=POST path=/session request
+INFO  2026-03-12T07:00:21 +2ms service=server status=started method=POST path=/session request
+INFO  2026-03-12T07:00:21 +7ms service=session id=ses_31f27563dffeFcy5Zsz7p67DJQ slug=stellar-panda version=7.0.46 projectID=global directory=/root title=New session - 2026-03-12T07:00:21.571Z time={"created":1773298821571,"updated":1773298821571} created
+INFO  2026-03-12T07:00:21 +8ms service=bus type=session.created publishing
+INFO  2026-03-12T07:00:21 +3ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:00:21 +4ms service=server status=completed duration=22 method=POST path=/session request
+INFO  2026-03-12T07:00:21 +2ms service=kilo-sessions sessionId=ses_31f27563dffeFcy5Zsz7p67DJQ session bootstrap skipped: no client
+INFO  2026-03-12T07:00:27 +5774ms service=server method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +0ms service=server status=started method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +43ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:27 +7ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:27 +9ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:00:27 +10ms service=bus type=session.turn.open publishing
+INFO  2026-03-12T07:00:27 +3ms service=bus type=session.status publishing
+INFO  2026-03-12T07:00:27 +0ms service=session.prompt step=0 sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ loop
+INFO  2026-03-12T07:00:27 +10ms service=server status=completed duration=82 method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +16ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:27 +3ms service=session.prompt status=started resolveTools
+INFO  2026-03-12T07:00:27 +37ms service=llm providerID=kilo modelID=arcee-ai/trinity-large-preview:free sessionID=title-ses_31f27563dffeFcy5Zsz7p67DJQ small=true agent=title mode=primary stream
+INFO  2026-03-12T07:00:27 +3ms service=provider status=started providerID=kilo getSDK
+INFO  2026-03-12T07:00:27 +0ms service=provider providerID=kilo pkg=@kilocode/kilo-gateway using bundled provider
+INFO  2026-03-12T07:00:27 +2ms service=provider status=completed duration=2 providerID=kilo getSDK
+INFO  2026-03-12T07:00:27 +2ms service=tool.registry status=started invalid
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=started question
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started bash
+INFO  2026-03-12T07:00:27 +3ms service=bash-tool shell=/usr/bin/bash bash tool using shell
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=started read
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started glob
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started grep
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started edit
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started write
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started task
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=started webfetch
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started todowrite
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=started websearch
+INFO  2026-03-12T07:00:27 +2ms service=tool.registry status=started codesearch
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=started skill
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=started plan_exit
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=completed duration=11 invalid
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=10 question
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 read
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 glob
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 grep
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 edit
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 write
+INFO  2026-03-12T07:00:27 +1ms service=tool.registry status=completed duration=6 webfetch
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=6 todowrite
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=3 codesearch
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=2 plan_exit
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=11 bash
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=5 websearch
+INFO  2026-03-12T07:00:27 +1ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:00:27 +1ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=5 skill
+INFO  2026-03-12T07:00:27 +0ms service=tool.registry status=completed duration=9 task
+INFO  2026-03-12T07:00:27 +15ms service=session.prompt status=completed duration=73 resolveTools
+INFO  2026-03-12T07:00:27 +25ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:00:27 +3ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:27 +10ms service=session.processor process
+INFO  2026-03-12T07:00:27 +0ms service=llm providerID=kilo modelID=arcee-ai/trinity-large-preview:free sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ small=false agent=code mode=primary stream
+INFO  2026-03-12T07:00:27 +1ms service=server method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ request
+INFO  2026-03-12T07:00:27 +0ms service=server status=started method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ request
+INFO  2026-03-12T07:00:27 +1ms service=server url=http://kilo.internal/session/ses_31f27563dffeFcy5Zsz7p67DJQ SEARCH
+INFO  2026-03-12T07:00:27 +3ms service=server status=completed duration=4 method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ request
+INFO  2026-03-12T07:00:27 +1ms service=server method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +0ms service=server status=started method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +6ms service=server status=completed duration=6 method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:00:27 +0ms service=server method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/todo request
+INFO  2026-03-12T07:00:27 +0ms service=server status=started method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/todo request
+INFO  2026-03-12T07:00:27 +9ms service=server status=completed duration=9 method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/todo request
+INFO  2026-03-12T07:00:27 +1ms service=server method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/diff request
+INFO  2026-03-12T07:00:27 +0ms service=server status=started method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/diff request
+INFO  2026-03-12T07:00:27 +7ms service=storage index=0 running migration
+INFO  2026-03-12T07:00:34 +6962ms service=storage index=1 running migration
+INFO  2026-03-12T07:00:34 +25ms service=bus type=session.diff publishing
+INFO  2026-03-12T07:00:34 +4ms service=server status=completed duration=6997 method=GET path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/diff request
+INFO  2026-03-12T07:00:34 +82ms service=bus type=session.status publishing
+INFO  2026-03-12T07:00:39 +4623ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:00:39 +10ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:39 +5ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:39 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:39 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +6541ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +4ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:00:45 +7ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:55 +9734ms service=permission permission=edit pattern=root/MEMORY.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:00:55 +1ms service=permission permission=edit pattern=root/MEMORY.md action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:00:55 +7ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:55 +6ms service=bus type=file.edited publishing
+INFO  2026-03-12T07:00:55 +1ms service=format file=/root/MEMORY.md formatting
+INFO  2026-03-12T07:00:55 +1ms service=format name=zig ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=uv ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=terraform ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=standardrb ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=shfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=rustfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=ruff ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=rubocop ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=air ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=prettier ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=pint ext=.md checking
+INFO  2026-03-12T07:00:55 +1ms service=format name=oxfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=ormolu ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=ocamlformat ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=nixfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=mix ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=latexindent ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=ktlint ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=htmlbeautifier ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=gofmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=gleam ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=dfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=dart ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=cljfmt ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=clang-format ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=format name=biome ext=.md checking
+INFO  2026-03-12T07:00:55 +0ms service=bus type=file.watcher.updated publishing
+INFO  2026-03-12T07:00:55 +1ms service=file.time sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ file=/root/MEMORY.md read
+INFO  2026-03-12T07:00:55 +0ms service=lsp file=/root/MEMORY.md touching file
+INFO  2026-03-12T07:00:55 +6ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:55 +77ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:55 +13ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:00:55 +3ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:55 +9ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:00:55 +3ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:55 +6ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:55 +1ms service=bus type=session.status publishing
+INFO  2026-03-12T07:00:55 +0ms service=session.prompt step=1 sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ loop
+INFO  2026-03-12T07:00:55 +5ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:00:55 +1ms service=session.prompt status=started resolveTools
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started invalid
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started question
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started bash
+INFO  2026-03-12T07:00:55 +1ms service=bash-tool shell=/usr/bin/bash bash tool using shell
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started read
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started glob
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started grep
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started edit
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started write
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started task
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started webfetch
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started todowrite
+INFO  2026-03-12T07:00:55 +1ms service=tool.registry status=started websearch
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started codesearch
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started skill
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=started plan_exit
+INFO  2026-03-12T07:00:55 +1ms service=tool.registry status=completed duration=3 invalid
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=3 question
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 read
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 glob
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 grep
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 edit
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 write
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 webfetch
+INFO  2026-03-12T07:00:55 +1ms service=tool.registry status=completed duration=3 todowrite
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 codesearch
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 plan_exit
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=4 bash
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 websearch
+INFO  2026-03-12T07:00:55 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:00:55 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=2 skill
+INFO  2026-03-12T07:00:55 +0ms service=tool.registry status=completed duration=3 task
+INFO  2026-03-12T07:00:55 +5ms service=session.prompt status=completed duration=9 resolveTools
+INFO  2026-03-12T07:00:55 +5ms service=session.processor process
+INFO  2026-03-12T07:00:55 +0ms service=llm providerID=kilo modelID=arcee-ai/trinity-large-preview:free sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ small=false agent=code mode=primary stream
+INFO  2026-03-12T07:01:02 +6242ms service=bus type=session.diff publishing
+INFO  2026-03-12T07:01:02 +28ms service=bus type=session.status publishing
+INFO  2026-03-12T07:01:05 +3332ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:01:05 +6ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:01:05 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:05 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:05 +190ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:05 +334ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +87ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +3ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +293ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +154ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +181ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:06 +207ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:07 +209ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:01:07 +615ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:01:07 +9ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:01:07 +5ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:01:07 +19ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:01:07 +4ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:01:07 +8ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:01:07 +1ms service=bus type=session.status publishing
+INFO  2026-03-12T07:01:07 +1ms service=session.prompt step=2 sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ loop
+INFO  2026-03-12T07:01:07 +5ms service=session.prompt sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ exiting loop
+INFO  2026-03-12T07:01:07 +5ms service=session.compaction pruning
+INFO  2026-03-12T07:01:07 +3ms service=bus type=session.turn.close publishing
+INFO  2026-03-12T07:01:07 +1ms service=session.compaction pruned=0 total=0 found
+INFO  2026-03-12T07:01:07 +1ms service=session.prompt sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ cancel
+INFO  2026-03-12T07:01:07 +0ms service=bus type=session.status publishing
+INFO  2026-03-12T07:01:07 +0ms service=bus type=session.idle publishing
+INFO  2026-03-12T07:01:14 +6632ms service=bus type=session.diff publishing
+INFO  2026-03-12T07:04:01 +167256ms service=server method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:04:01 +0ms service=server status=started method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:04:01 +21ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:01 +2ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:01 +4ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:04:01 +1ms service=bus type=session.turn.open publishing
+INFO  2026-03-12T07:04:01 +6ms service=bus type=session.status publishing
+INFO  2026-03-12T07:04:01 +0ms service=session.prompt step=0 sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ loop
+INFO  2026-03-12T07:04:01 +5ms service=server status=completed duration=39 method=POST path=/session/ses_31f27563dffeFcy5Zsz7p67DJQ/message request
+INFO  2026-03-12T07:04:01 +8ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:01 +0ms service=session.prompt status=started resolveTools
+INFO  2026-03-12T07:04:01 +1ms service=tool.registry status=started invalid
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started question
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started bash
+INFO  2026-03-12T07:04:01 +1ms service=bash-tool shell=/usr/bin/bash bash tool using shell
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started read
+INFO  2026-03-12T07:04:01 +1ms service=tool.registry status=started glob
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started grep
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started edit
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started write
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started task
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started webfetch
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started todowrite
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started websearch
+INFO  2026-03-12T07:04:01 +1ms service=tool.registry status=started codesearch
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started skill
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=started plan_exit
+INFO  2026-03-12T07:04:01 +1ms service=tool.registry status=completed duration=4 invalid
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=4 question
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=3 read
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 glob
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 grep
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 edit
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 write
+INFO  2026-03-12T07:04:01 +1ms service=tool.registry status=completed duration=3 webfetch
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=3 todowrite
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 codesearch
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 plan_exit
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=5 bash
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=3 websearch
+INFO  2026-03-12T07:04:01 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:01 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=2 skill
+INFO  2026-03-12T07:04:01 +0ms service=tool.registry status=completed duration=3 task
+INFO  2026-03-12T07:04:01 +13ms service=session.prompt status=completed duration=19 resolveTools
+INFO  2026-03-12T07:04:01 +11ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:04:01 +4ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:01 +6ms service=session.processor process
+INFO  2026-03-12T07:04:01 +1ms service=llm providerID=kilo modelID=arcee-ai/trinity-large-preview:free sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ small=false agent=code mode=primary stream
+INFO  2026-03-12T07:04:05 +3623ms service=bus type=session.diff publishing
+INFO  2026-03-12T07:04:05 +18ms service=bus type=session.status publishing
+INFO  2026-03-12T07:04:09 +3910ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:09 +5ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:09 +4ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +0ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +209ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +321ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:09 +127ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:10 +316ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:10 +339ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:10 +238ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:11 +236ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:11 +200ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:11 +221ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:11 +278ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:11 +141ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +287ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +48ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +127ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +180ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +193ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +1ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +60ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +2ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:12 +183ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:13 +30ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:13 +149ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:13 +11ms service=permission permission=read pattern=/root/PROJECT.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:13 +1ms service=permission permission=read pattern=/root/PROJECT.md action={"permission":"read","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:13 +4ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:13 +4ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:13 +7ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:13 +499ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:13 +5ms service=permission permission=read pattern=/root/TECH_STACK.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:13 +1ms service=permission permission=read pattern=/root/TECH_STACK.md action={"permission":"read","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:13 +16ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:13 +26ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:13 +5ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:14 +357ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:14 +3ms service=permission permission=read pattern=/root/ARCHITECTURE.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:14 +0ms service=permission permission=read pattern=/root/ARCHITECTURE.md action={"permission":"read","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:14 +3ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:14 +3ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:14 +3ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:15 +1379ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:15 +5ms service=permission permission=read pattern=/root/UX_GUIDELINES.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:15 +1ms service=permission permission=read pattern=/root/UX_GUIDELINES.md action={"permission":"read","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:15 +5ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:15 +6ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:15 +5ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +2930ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +4ms service=permission permission=read pattern=/root/AGENTS.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:18 +0ms service=permission permission=read pattern=/root/AGENTS.md action={"permission":"read","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:18 +7ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +6ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +525ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +10ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:18 +3ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:19 +14ms service=bus type=session.updated publishing
+INFO  2026-03-12T07:04:19 +3ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:19 +6ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:19 +1ms service=bus type=session.status publishing
+INFO  2026-03-12T07:04:19 +2ms service=session.prompt step=1 sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ loop
+INFO  2026-03-12T07:04:19 +6ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:04:19 +0ms service=session.prompt status=started resolveTools
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started invalid
+INFO  2026-03-12T07:04:19 +1ms service=tool.registry status=started question
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started bash
+INFO  2026-03-12T07:04:19 +0ms service=bash-tool shell=/usr/bin/bash bash tool using shell
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started read
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started glob
+INFO  2026-03-12T07:04:19 +1ms service=tool.registry status=started grep
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started edit
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started write
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started task
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started webfetch
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started todowrite
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started websearch
+INFO  2026-03-12T07:04:19 +1ms service=tool.registry status=started codesearch
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started skill
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=started plan_exit
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=3 invalid
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 question
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 read
+INFO  2026-03-12T07:04:19 +1ms service=tool.registry status=completed duration=3 glob
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=3 grep
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 edit
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 write
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 webfetch
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 todowrite
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=1 codesearch
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=1 plan_exit
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=3 bash
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=2 websearch
+INFO  2026-03-12T07:04:19 +0ms service=permission permission=task pattern=general ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:19 +0ms service=permission permission=task pattern=explore ruleset=[{"permission":"*","action":"allow","pattern":"*"},{"permission":"doom_loop","action":"ask","pattern":"*"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","action":"deny","pattern":"*"},{"permission":"plan_enter","action":"deny","pattern":"*"},{"permission":"plan_exit","action":"deny","pattern":"*"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","action":"allow","pattern":"*"},{"permission":"plan_enter","action":"allow","pattern":"*"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:19 +1ms service=tool.registry status=completed duration=1 skill
+INFO  2026-03-12T07:04:19 +0ms service=tool.registry status=completed duration=3 task
+INFO  2026-03-12T07:04:19 +3ms service=session.prompt status=completed duration=8 resolveTools
+INFO  2026-03-12T07:04:19 +2ms service=session.processor process
+INFO  2026-03-12T07:04:19 +0ms service=llm providerID=kilo modelID=arcee-ai/trinity-large-preview:free sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ small=false agent=code mode=primary stream
+INFO  2026-03-12T07:04:27 +8180ms service=bus type=session.diff publishing
+INFO  2026-03-12T07:04:27 +20ms service=bus type=session.status publishing
+INFO  2026-03-12T07:04:30 +3346ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:31 +451ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:34 +3822ms service=permission permission=edit pattern=root/PROJECT.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:34 +0ms service=permission permission=edit pattern=root/PROJECT.md action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:34 +3ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:34 +8ms service=bus type=file.edited publishing
+INFO  2026-03-12T07:04:34 +0ms service=format file=/root/PROJECT.md formatting
+INFO  2026-03-12T07:04:34 +1ms service=format name=zig ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=uv ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=terraform ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=standardrb ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=shfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=rustfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=ruff ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=rubocop ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=air ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=prettier ext=.md checking
+INFO  2026-03-12T07:04:34 +1ms service=format name=pint ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=oxfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=ormolu ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=ocamlformat ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=nixfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=mix ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=latexindent ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=ktlint ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=htmlbeautifier ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=gofmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=gleam ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=dfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=dart ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=cljfmt ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=clang-format ext=.md checking
+INFO  2026-03-12T07:04:34 +0ms service=format name=biome ext=.md checking
+INFO  2026-03-12T07:04:34 +1ms service=bus type=file.watcher.updated publishing
+INFO  2026-03-12T07:04:34 +0ms service=file.time sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ file=/root/PROJECT.md read
+INFO  2026-03-12T07:04:34 +0ms service=lsp file=/root/PROJECT.md touching file
+INFO  2026-03-12T07:04:34 +4ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:35 +531ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:35 +37ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:36 +736ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:47 +11364ms service=permission permission=edit pattern=root/TECH_STACK.md ruleset=[{"permission":"*","pattern":"*","action":"allow"},{"permission":"doom_loop","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"*","action":"ask"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"},{"permission":"question","pattern":"*","action":"deny"},{"permission":"plan_enter","pattern":"*","action":"deny"},{"permission":"plan_exit","pattern":"*","action":"deny"},{"permission":"read","pattern":"*","action":"allow"},{"permission":"read","pattern":"*.env","action":"ask"},{"permission":"read","pattern":"*.env.*","action":"ask"},{"permission":"read","pattern":"*.env.example","action":"allow"},{"permission":"question","pattern":"*","action":"allow"},{"permission":"plan_enter","pattern":"*","action":"allow"},{"permission":"external_directory","pattern":"/root/.local/share/kilo/tool-output/*","action":"allow"}] evaluate
+INFO  2026-03-12T07:04:47 +1ms service=permission permission=edit pattern=root/TECH_STACK.md action={"permission":"*","pattern":"*","action":"allow"} evaluated
+INFO  2026-03-12T07:04:47 +6ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:47 +5ms service=bus type=file.edited publishing
+INFO  2026-03-12T07:04:47 +0ms service=format file=/root/TECH_STACK.md formatting
+INFO  2026-03-12T07:04:47 +0ms service=format name=zig ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=uv ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=terraform ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=standardrb ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=shfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=rustfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=ruff ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=rubocop ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=air ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=prettier ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=pint ext=.md checking
+INFO  2026-03-12T07:04:47 +1ms service=format name=oxfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=ormolu ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=ocamlformat ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=nixfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=mix ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=latexindent ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=ktlint ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=htmlbeautifier ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=gofmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=gleam ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=dfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=dart ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=cljfmt ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=clang-format ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=format name=biome ext=.md checking
+INFO  2026-03-12T07:04:47 +0ms service=bus type=file.watcher.updated publishing
+INFO  2026-03-12T07:04:47 +1ms service=file.time sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ file=/root/TECH_STACK.md read
+INFO  2026-03-12T07:04:47 +0ms service=lsp file=/root/TECH_STACK.md touching file
+INFO  2026-03-12T07:04:47 +2ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:04:47 +223ms service=bus type=message.part.delta publishing
+INFO  2026-03-12T07:04:48 +268ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:05:01 +13944ms service=default worker shutting down
+INFO  2026-03-12T07:05:01 +2ms service=default disposing all instances
+INFO  2026-03-12T07:05:01 +1ms service=bus type=* unsubscribing
+INFO  2026-03-12T07:05:01 +1ms service=server event disconnected
+INFO  2026-03-12T07:05:02 +1ms service=default directory=/root disposing instance
+INFO  2026-03-12T07:05:02 +0ms service=state key=/root waiting for state disposal to complete
+INFO  2026-03-12T07:05:02 +4ms service=state key=/root state disposal completed
+ERROR 2026-03-12T07:05:02 +8ms service=session.processor error=The operation was aborted. stack="abort@[native code]\n@/$bunfs/root/src/cli/cmd/tui/worker.js:186577:25\nprocessTicksAndRejections@" process
+INFO  2026-03-12T07:05:02 +2ms service=bus type=session.error publishing
+INFO  2026-03-12T07:05:02 +0ms service=bus type=session.status publishing
+INFO  2026-03-12T07:05:02 +1ms service=bus type=session.idle publishing
+INFO  2026-03-12T07:05:02 +4ms service=bus type=message.part.updated publishing
+INFO  2026-03-12T07:05:02 +5ms service=bus type=message.updated publishing
+INFO  2026-03-12T07:05:02 +9ms service=bus type=session.turn.close publishing
+INFO  2026-03-12T07:05:02 +0ms service=session.prompt sessionID=ses_31f27563dffeFcy5Zsz7p67DJQ cancel
+INFO  2026-03-12T07:05:02 +0ms service=bus type=session.status publishing
+INFO  2026-03-12T07:05:02 +0ms service=bus type=session.idle publishing
+INFO  2026-03-12T07:05:02 +12ms service=config path=kilo.jsonc loading
+INFO  2026-03-12T07:05:02 +1ms service=config path=kilo.json loading
+INFO  2026-03-12T07:05:02 +1ms service=config path=opencode.jsonc loading
+INFO  2026-03-12T07:05:02 +0ms service=config path=opencode.json loading
+INFO  2026-03-12T07:05:02 +311ms service=session.compaction pruning
+INFO  2026-03-12T07:05:02 +7ms service=session.compaction pruned=0 total=0 found

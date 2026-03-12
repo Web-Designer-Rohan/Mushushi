@@ -1,0 +1,109 @@
+INFO  2026-03-11T15:02:25 +448ms service=server method=GET path=/event request
+INFO  2026-03-11T15:02:25 +1ms service=server status=started method=GET path=/event request
+INFO  2026-03-11T15:02:25 +2ms service=default directory=/root creating instance
+INFO  2026-03-11T15:02:25 +1ms service=project directory=/root fromDirectory
+INFO  2026-03-11T15:02:25 +4ms service=db path=/root/.local/share/kilo/kilo.db opening database
+INFO  2026-03-11T15:02:25 +26ms service=db count=3 mode=bundled applying migrations
+INFO  2026-03-11T15:02:25 +28ms service=default directory=/root bootstrapping
+INFO  2026-03-11T15:02:25 +21ms service=server method=GET path=/session request
+INFO  2026-03-11T15:02:25 +0ms service=server status=started method=GET path=/session request
+INFO  2026-03-11T15:02:25 +0ms service=server method=GET path=/config/providers request
+INFO  2026-03-11T15:02:25 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-03-11T15:02:25 +1ms service=server method=GET path=/provider request
+INFO  2026-03-11T15:02:25 +0ms service=server status=started method=GET path=/provider request
+INFO  2026-03-11T15:02:25 +0ms service=server method=GET path=/agent request
+INFO  2026-03-11T15:02:25 +1ms service=server status=started method=GET path=/agent request
+INFO  2026-03-11T15:02:25 +0ms service=server method=GET path=/config request
+INFO  2026-03-11T15:02:25 +0ms service=server status=started method=GET path=/config request
+INFO  2026-03-11T15:02:25 +154ms service=config path=/root/.config/kilo/config.json loading
+INFO  2026-03-11T15:02:25 +53ms service=config path=/root/.config/kilo/kilo.json loading
+INFO  2026-03-11T15:02:25 +2ms service=config path=/root/.config/kilo/kilo.jsonc loading
+INFO  2026-03-11T15:02:25 +45ms service=config path=/root/.config/kilo/opencode.json loading
+INFO  2026-03-11T15:02:25 +2ms service=config path=/root/.config/kilo/opencode.jsonc loading
+INFO  2026-03-11T15:02:25 +80ms service=config path=kilo.jsonc loading
+INFO  2026-03-11T15:02:25 +2ms service=config path=kilo.json loading
+INFO  2026-03-11T15:02:25 +1ms service=config path=opencode.jsonc loading
+INFO  2026-03-11T15:02:25 +1ms service=config path=opencode.json loading
+INFO  2026-03-11T15:02:25 +158ms service=bun cmd=["/.l2s/.l2s.kilo0001.0002","install"] cwd=/root/.config/kilo running
+INFO  2026-03-11T15:02:27 +1666ms service=plugin name=KiloAuthPlugin loading internal plugin
+INFO  2026-03-11T15:02:27 +1ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-03-11T15:02:27 +0ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-03-11T15:02:27 +1ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-03-11T15:02:27 +1ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-03-11T15:02:27 +100ms service=bun pkg=opencode-anthropic-auth version=0.0.13 installing package using Bun's default registry resolution
+INFO  2026-03-11T15:02:27 +1ms service=bun cmd=["/.l2s/.l2s.kilo0001.0002","add","--force","--exact","--cwd","/root/.cache/kilo","opencode-anthropic-auth@0.0.13"] cwd=/root/.cache/kilo running
+INFO  2026-03-11T15:02:33 +5333ms service=bun code=0 stdout= stderr= done
+INFO  2026-03-11T15:02:38 +5024ms service=bun code=0 stdout= stderr= done
+INFO  2026-03-11T15:02:38 +168ms service=bus type=* subscribing
+INFO  2026-03-11T15:02:38 +1ms service=bus type=session.created subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=session.updated subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=message.updated subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=session.diff subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=session.turn.open subscribing
+INFO  2026-03-11T15:02:38 +0ms service=bus type=session.turn.close subscribing
+INFO  2026-03-11T15:02:38 +0ms service=format init
+INFO  2026-03-11T15:02:38 +0ms service=bus type=file.edited subscribing
+INFO  2026-03-11T15:02:38 +1ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server, julials enabled LSP servers
+INFO  2026-03-11T15:02:38 +1ms service=file.watcher init
+INFO  2026-03-11T15:02:38 +4ms service=scheduler id=snapshot.cleanup run
+INFO  2026-03-11T15:02:38 +1ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-03-11T15:02:38 +3ms service=bus type=command.executed subscribing
+INFO  2026-03-11T15:02:38 +0ms service=file.watcher platform=linux backend=inotify watcher backend
+INFO  2026-03-11T15:02:38 +15ms service=server event connected
+INFO  2026-03-11T15:02:38 +7ms service=bus type=* subscribing
+INFO  2026-03-11T15:02:41 +3738ms service=server status=started providers
+INFO  2026-03-11T15:02:42 +13ms service=provider status=started state
+INFO  2026-03-11T15:02:42 +25ms service=server status=completed duration=16686 method=GET path=/event request
+INFO  2026-03-11T15:02:42 +1ms service=server status=completed duration=16603 method=GET path=/config request
+INFO  2026-03-11T15:02:42 +4ms service=server status=completed duration=16609 method=GET path=/session request
+INFO  2026-03-11T15:02:42 +43ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-11T15:02:42 +5ms service=server status=completed duration=16655 method=GET path=/agent request
+INFO  2026-03-11T15:02:42 +1ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-11T15:02:44 +2189ms service=model-cache providerID=kilo count=323 models fetched and cached
+INFO  2026-03-11T15:02:44 +93ms service=provider init
+INFO  2026-03-11T15:02:44 +34ms service=model-cache providerID=kilo count=323 models fetched and cached
+INFO  2026-03-11T15:02:44 +25ms service=provider providerID=kilo found
+INFO  2026-03-11T15:02:44 +0ms service=provider status=completed duration=2420 state
+INFO  2026-03-11T15:02:44 +185ms service=server status=completed duration=19183 method=GET path=/provider request
+INFO  2026-03-11T15:02:45 +920ms service=server status=completed duration=3537 providers
+INFO  2026-03-11T15:02:45 +10ms service=server status=completed duration=20114 method=GET path=/config/providers request
+INFO  2026-03-11T15:02:45 +233ms service=server method=GET path=/command request
+INFO  2026-03-11T15:02:45 +1ms service=server status=started method=GET path=/command request
+INFO  2026-03-11T15:02:45 +10ms service=review getting uncommitted changes
+WARN  2026-03-11T15:02:45 +8ms service=review exitCode=1 stderr=bun: command not found: git
+ git diff failed
+INFO  2026-03-11T15:02:45 +6ms service=review no uncommitted changes found
+INFO  2026-03-11T15:02:45 +12ms service=server status=completed duration=36 method=GET path=/command request
+WARN  2026-03-11T15:02:45 +10ms service=review no base branch found, defaulting to main
+INFO  2026-03-11T15:02:45 +5ms service=review baseBranch=main getting branch changes
+WARN  2026-03-11T15:02:45 +2ms service=review exitCode=1 stderr=bun: command not found: git
+ baseBranch=main git diff failed
+INFO  2026-03-11T15:02:45 +1ms service=review baseBranch=main no branch changes found
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/lsp request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/lsp request
+INFO  2026-03-11T15:02:45 +2ms service=server status=completed duration=2 method=GET path=/lsp request
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/mcp request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/mcp request
+INFO  2026-03-11T15:02:45 +2ms service=server status=completed duration=2 method=GET path=/mcp request
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/experimental/resource request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/experimental/resource request
+INFO  2026-03-11T15:02:45 +1ms service=server status=completed duration=1 method=GET path=/experimental/resource request
+INFO  2026-03-11T15:02:45 +1ms service=server method=GET path=/formatter request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/formatter request
+INFO  2026-03-11T15:02:45 +58ms service=server status=completed duration=58 method=GET path=/formatter request
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/session/status request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/session/status request
+INFO  2026-03-11T15:02:45 +1ms service=server status=completed duration=1 method=GET path=/session/status request
+INFO  2026-03-11T15:02:45 +1ms service=server method=GET path=/provider/auth request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/provider/auth request
+INFO  2026-03-11T15:02:45 +2ms service=server status=completed duration=2 method=GET path=/provider/auth request
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/vcs request
+INFO  2026-03-11T15:02:45 +1ms service=server status=started method=GET path=/vcs request
+INFO  2026-03-11T15:02:45 +4ms service=server status=completed duration=3 method=GET path=/vcs request
+INFO  2026-03-11T15:02:45 +0ms service=server method=GET path=/path request
+INFO  2026-03-11T15:02:45 +0ms service=server status=started method=GET path=/path request
+INFO  2026-03-11T15:02:45 +1ms service=server status=completed duration=1 method=GET path=/path request
+INFO  2026-03-11T15:02:46 +1030ms service=server method=GET path=/kilo/notifications request
+INFO  2026-03-11T15:02:46 +1ms service=server status=started method=GET path=/kilo/notifications request
+INFO  2026-03-11T15:02:46 +6ms service=server status=completed duration=6 method=GET path=/kilo/notifications request

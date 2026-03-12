@@ -1,0 +1,16 @@
+{
+  "model": {
+    "code": {
+      "providerID": "kilo",
+      "modelID": "arcee-ai/trinity-large-preview:free"
+    }
+  },
+  "recent": [
+    {
+      "providerID": "kilo",
+      "modelID": "arcee-ai/trinity-large-preview:free"
+    }
+  ],
+  "favorite": [],
+  "variant": {}
+}

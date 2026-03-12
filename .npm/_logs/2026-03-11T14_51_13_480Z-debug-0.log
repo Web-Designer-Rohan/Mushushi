@@ -1,0 +1,142 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.20.1
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/root/.npmrc
+5 silly config load:file:/usr/etc/npmrc
+6 verbose title npm install @kilocode/cli
+7 verbose argv "install" "--global" "@kilocode/cli"
+8 verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-03-11T14_51_13_480Z-
+9 verbose logfile /root/.npm/_logs/2026-03-11T14_51_13_480Z-debug-0.log
+10 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest @kilocode/cli@*
+14 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli 2337ms (cache miss)
+16 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli set size:undefined disposed:false
+17 silly placeDep ROOT @kilocode/cli@7.0.46 OK for:  want: *
+18 silly fetch manifest @kilocode/cli-linux-arm64@7.0.46
+19 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-arm64 cache-miss
+20 silly fetch manifest @kilocode/cli-linux-x64-musl@7.0.46
+21 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-musl cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/npm 2957ms
+23 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-arm64 914ms (cache miss)
+24 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-arm64 set size:undefined disposed:false
+25 silly fetch manifest @kilocode/cli-darwin-arm64@7.0.46
+26 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-arm64 cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-darwin-arm64 617ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-arm64 set size:undefined disposed:false
+29 silly fetch manifest @kilocode/cli-linux-arm64-musl@7.0.46
+30 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-arm64-musl cache-miss
+31 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-x64-musl 1892ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-musl set size:undefined disposed:false
+33 silly fetch manifest @kilocode/cli-windows-x64@7.0.46
+34 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-windows-x64 cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-arm64-musl 848ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-arm64-musl set size:undefined disposed:false
+37 silly fetch manifest @kilocode/cli-linux-x64-baseline-musl@7.0.46
+38 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline-musl cache-miss
+39 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-windows-x64 813ms (cache miss)
+40 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-windows-x64 set size:undefined disposed:false
+41 silly fetch manifest @kilocode/cli-linux-x64@7.0.46
+42 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64 cache-miss
+43 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline-musl 916ms (cache miss)
+44 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline-musl set size:undefined disposed:false
+45 silly fetch manifest @kilocode/cli-darwin-x64-baseline@7.0.46
+46 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-x64-baseline cache-miss
+47 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-x64 614ms (cache miss)
+48 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64 set size:undefined disposed:false
+49 silly fetch manifest @kilocode/cli-darwin-x64@7.0.46
+50 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-x64 cache-miss
+51 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-darwin-x64-baseline 953ms (cache miss)
+52 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-x64-baseline set size:undefined disposed:false
+53 silly fetch manifest @kilocode/cli-windows-x64-baseline@7.0.46
+54 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-windows-x64-baseline cache-miss
+55 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-darwin-x64 1229ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-darwin-x64 set size:undefined disposed:false
+57 silly fetch manifest @kilocode/cli-linux-x64-baseline@7.0.46
+58 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline cache-miss
+59 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline 605ms (cache miss)
+60 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-linux-x64-baseline set size:undefined disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/@kilocode%2fcli-windows-x64-baseline 901ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/@kilocode%2fcli-windows-x64-baseline set size:undefined disposed:false
+63 silly placeDep node_modules/@kilocode/cli @kilocode/cli-darwin-arm64@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+64 silly placeDep node_modules/@kilocode/cli @kilocode/cli-darwin-x64@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+65 silly placeDep node_modules/@kilocode/cli @kilocode/cli-darwin-x64-baseline@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+66 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-arm64@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+67 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-arm64-musl@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+68 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-x64@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+69 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-x64-baseline@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+70 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-x64-baseline-musl@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+71 silly placeDep node_modules/@kilocode/cli @kilocode/cli-linux-x64-musl@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+72 silly placeDep node_modules/@kilocode/cli @kilocode/cli-windows-x64@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+73 silly placeDep node_modules/@kilocode/cli @kilocode/cli-windows-x64-baseline@7.0.46 OK for: @kilocode/cli@7.0.46 want: 7.0.46
+74 silly reify moves {}
+75 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-windows-x64-baseline
+76 silly reify mark deleted [
+76 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-windows-x64-baseline'
+76 silly reify ]
+77 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-windows-x64
+78 silly reify mark deleted [
+78 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-windows-x64'
+78 silly reify ]
+79 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-musl
+80 silly reify mark deleted [
+80 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-musl'
+80 silly reify ]
+81 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-baseline-musl
+82 silly reify mark deleted [
+82 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-baseline-musl'
+82 silly reify ]
+83 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-baseline
+84 silly reify mark deleted [
+84 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64-baseline'
+84 silly reify ]
+85 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64
+86 silly reify mark deleted [
+86 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-x64'
+86 silly reify ]
+87 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-x64-baseline
+88 silly reify mark deleted [
+88 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-x64-baseline'
+88 silly reify ]
+89 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-x64
+90 silly reify mark deleted [
+90 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-x64'
+90 silly reify ]
+91 verbose reify failed optional dependency /usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-arm64
+92 silly reify mark deleted [
+92 silly reify   '/usr/lib/node_modules/@kilocode/cli/node_modules/@kilocode/cli-darwin-arm64'
+92 silly reify ]
+93 silly tarball no local data for @kilocode/cli-linux-arm64-musl@https://registry.npmjs.org/@kilocode/cli-linux-arm64-musl/-/cli-linux-arm64-musl-7.0.46.tgz. Extracting by manifest.
+94 silly tarball no local data for @kilocode/cli@https://registry.npmjs.org/@kilocode/cli/-/cli-7.0.46.tgz. Extracting by manifest.
+95 silly tarball no local data for @kilocode/cli-linux-arm64@https://registry.npmjs.org/@kilocode/cli-linux-arm64/-/cli-linux-arm64-7.0.46.tgz. Extracting by manifest.
+96 http fetch GET 200 https://registry.npmjs.org/@kilocode/cli/-/cli-7.0.46.tgz 661ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/@kilocode/cli-linux-arm64-musl/-/cli-linux-arm64-musl-7.0.46.tgz 31749ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/@kilocode/cli-linux-arm64/-/cli-linux-arm64-7.0.46.tgz 32182ms (cache miss)
+99 info run @kilocode/cli@7.0.46 postinstall node_modules/@kilocode/cli bun ./postinstall.mjs || node ./postinstall.mjs
+100 info run @kilocode/cli@7.0.46 postinstall { code: 0, signal: null }
+101 silly ADD node_modules/@kilocode/cli
+102 silly ADD
+103 silly ADD
+104 silly ADD
+105 silly ADD
+106 silly ADD
+107 silly ADD
+108 silly ADD node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-arm64-musl
+109 silly ADD node_modules/@kilocode/cli/node_modules/@kilocode/cli-linux-arm64
+110 silly ADD
+111 silly ADD
+112 silly ADD
+113 verbose cwd /root
+114 verbose os Linux 6.17.0-PRoot-Distro
+115 verbose node v20.20.1
+116 verbose npm  v10.8.2
+117 notice
+117 notice New major version of npm available! 10.8.2 -> 11.11.0
+117 notice Changelog: https://github.com/npm/cli/releases/tag/v11.11.0
+117 notice To update run: npm install -g npm@11.11.0
+117 notice  { force: true, [Symbol(proc-log.meta)]: true }
+118 verbose exit 0
+119 info ok

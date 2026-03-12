@@ -1,0 +1,70 @@
+INFO  2026-03-12T09:00:19 +522ms service=server method=GET path=/event request
+INFO  2026-03-12T09:00:19 +1ms service=server status=started method=GET path=/event request
+INFO  2026-03-12T09:00:19 +3ms service=default directory=/root creating instance
+INFO  2026-03-12T09:00:19 +1ms service=project directory=/root fromDirectory
+INFO  2026-03-12T09:00:19 +5ms service=db path=/root/.local/share/kilo/kilo.db opening database
+INFO  2026-03-12T09:00:19 +18ms service=db count=3 mode=bundled applying migrations
+INFO  2026-03-12T09:00:19 +30ms service=default directory=/root bootstrapping
+INFO  2026-03-12T09:00:19 +34ms service=server method=GET path=/session request
+INFO  2026-03-12T09:00:19 +0ms service=server status=started method=GET path=/session request
+INFO  2026-03-12T09:00:19 +1ms service=server method=GET path=/config/providers request
+INFO  2026-03-12T09:00:19 +0ms service=server status=started method=GET path=/config/providers request
+INFO  2026-03-12T09:00:19 +1ms service=server method=GET path=/provider request
+INFO  2026-03-12T09:00:19 +1ms service=server status=started method=GET path=/provider request
+INFO  2026-03-12T09:00:19 +1ms service=server method=GET path=/agent request
+INFO  2026-03-12T09:00:19 +0ms service=server status=started method=GET path=/agent request
+INFO  2026-03-12T09:00:19 +1ms service=server method=GET path=/config request
+INFO  2026-03-12T09:00:19 +0ms service=server status=started method=GET path=/config request
+INFO  2026-03-12T09:00:19 +157ms service=config path=/root/.config/kilo/config.json loading
+INFO  2026-03-12T09:00:19 +3ms service=config path=/root/.config/kilo/kilo.json loading
+INFO  2026-03-12T09:00:19 +1ms service=config path=/root/.config/kilo/kilo.jsonc loading
+INFO  2026-03-12T09:00:19 +1ms service=config path=/root/.config/kilo/opencode.json loading
+INFO  2026-03-12T09:00:19 +1ms service=config path=/root/.config/kilo/opencode.jsonc loading
+INFO  2026-03-12T09:00:19 +3ms service=config path=kilo.jsonc loading
+INFO  2026-03-12T09:00:19 +1ms service=config path=kilo.json loading
+INFO  2026-03-12T09:00:19 +12ms service=config path=opencode.jsonc loading
+INFO  2026-03-12T09:00:19 +1ms service=config path=opencode.json loading
+INFO  2026-03-12T09:00:19 +191ms service=plugin name=KiloAuthPlugin loading internal plugin
+INFO  2026-03-12T09:00:19 +1ms service=plugin name=CodexAuthPlugin loading internal plugin
+INFO  2026-03-12T09:00:19 +2ms service=plugin name=CopilotAuthPlugin loading internal plugin
+INFO  2026-03-12T09:00:19 +0ms service=plugin name=gitlabAuthPlugin loading internal plugin
+INFO  2026-03-12T09:00:19 +1ms service=plugin path=opencode-anthropic-auth@0.0.13 loading plugin
+INFO  2026-03-12T09:00:20 +441ms service=bus type=* subscribing
+INFO  2026-03-12T09:00:20 +1ms service=bus type=session.created subscribing
+INFO  2026-03-12T09:00:20 +0ms service=bus type=session.updated subscribing
+INFO  2026-03-12T09:00:20 +1ms service=bus type=message.updated subscribing
+INFO  2026-03-12T09:00:20 +0ms service=bus type=message.part.updated subscribing
+INFO  2026-03-12T09:00:20 +0ms service=bus type=session.diff subscribing
+INFO  2026-03-12T09:00:20 +0ms service=bus type=session.turn.open subscribing
+INFO  2026-03-12T09:00:20 +0ms service=bus type=session.turn.close subscribing
+INFO  2026-03-12T09:00:20 +0ms service=format init
+INFO  2026-03-12T09:00:20 +0ms service=bus type=file.edited subscribing
+INFO  2026-03-12T09:00:20 +2ms service=lsp serverIds=deno, typescript, vue, eslint, oxlint, biome, gopls, ruby-lsp, pyright, elixir-ls, zls, csharp, fsharp, sourcekit-lsp, rust, clangd, svelte, astro, jdtls, kotlin-ls, yaml-ls, lua-ls, php intelephense, prisma, dart, ocaml-lsp, bash, terraform, texlab, dockerfile, gleam, clojure-lsp, nixd, tinymist, haskell-language-server, julials enabled LSP servers
+INFO  2026-03-12T09:00:20 +1ms service=file.watcher init
+INFO  2026-03-12T09:00:20 +3ms service=scheduler id=snapshot.cleanup run
+INFO  2026-03-12T09:00:20 +1ms service=scheduler id=tool.truncation.cleanup run
+INFO  2026-03-12T09:00:20 +6ms service=bus type=command.executed subscribing
+INFO  2026-03-12T09:00:20 +0ms service=file.watcher platform=linux backend=inotify watcher backend
+INFO  2026-03-12T09:00:20 +15ms service=server event connected
+INFO  2026-03-12T09:00:20 +6ms service=bus type=* subscribing
+INFO  2026-03-12T09:00:27 +7001ms service=server status=started providers
+INFO  2026-03-12T09:00:27 +71ms service=provider status=started state
+INFO  2026-03-12T09:00:27 +343ms service=server status=completed duration=8363 method=GET path=/event request
+INFO  2026-03-12T09:00:27 +4ms service=server status=completed duration=8271 method=GET path=/config request
+INFO  2026-03-12T09:00:27 +43ms service=server status=completed duration=8319 method=GET path=/session request
+INFO  2026-03-12T09:00:28 +284ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-12T09:00:28 +25ms service=server status=completed duration=8623 method=GET path=/agent request
+INFO  2026-03-12T09:00:28 +21ms service=model-cache providerID=kilo fetching models
+INFO  2026-03-12T09:00:29 +1871ms service=model-cache providerID=kilo count=326 models fetched and cached
+INFO  2026-03-12T09:00:30 +717ms service=provider init
+INFO  2026-03-12T09:00:30 +122ms service=model-cache providerID=kilo count=326 models fetched and cached
+INFO  2026-03-12T09:00:30 +45ms service=provider providerID=kilo found
+INFO  2026-03-12T09:00:30 +11ms service=provider status=completed duration=3486 state
+INFO  2026-03-12T09:00:32 +1535ms service=server status=completed duration=12948 method=GET path=/provider request
+INFO  2026-03-12T09:00:33 +683ms service=server status=completed duration=5774 providers
+INFO  2026-03-12T09:00:33 +5ms service=server status=completed duration=13637 method=GET path=/config/providers request
+INFO  2026-03-12T09:00:35 +2711ms service=server method=GET path=/command request
+INFO  2026-03-12T09:00:35 +4ms service=server status=started method=GET path=/command request
+INFO  2026-03-12T09:00:35 +70ms service=review getting uncommitted changes
+INFO  2026-03-12T09:00:47 +11544ms service=server status=completed duration=11614 method=GET path=/command request
+INFO  2026-03-12T09:00:47 +2ms service=server method=GET path=/lsp request

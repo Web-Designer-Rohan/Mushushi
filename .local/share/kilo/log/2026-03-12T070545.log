@@ -1,0 +1,10 @@
+INFO  2026-03-12T07:05:45 +1740ms service=default version=7.0.46 args=[] opencode
+INFO  2026-03-12T07:05:45 +4ms service=config path=/root/.config/kilo/config.json loading
+INFO  2026-03-12T07:05:45 +9ms service=config path=/root/.config/kilo/kilo.json loading
+INFO  2026-03-12T07:05:45 +3ms service=config path=/root/.config/kilo/kilo.jsonc loading
+INFO  2026-03-12T07:05:45 +3ms service=config path=/root/.config/kilo/opencode.json loading
+INFO  2026-03-12T07:05:45 +1ms service=config path=/root/.config/kilo/opencode.jsonc loading
+INFO  2026-03-12T07:05:45 +271ms service=default directory=/root creating instance
+INFO  2026-03-12T07:05:45 +3ms service=project directory=/root fromDirectory
+INFO  2026-03-12T07:05:45 +18ms service=db path=/root/.local/share/kilo/kilo.db opening database
+INFO  2026-03-12T07:05:45 +59ms service=db count=3 mode=bundled applying migrations
